@@ -15,6 +15,14 @@ This Instagram Clone App is developed for educational purposes only. It is inten
 - **Bottom Navigation**: Navigate easily between different sections of the app using a bottom navigation bar.
 - **Image Uploading and Storage**: Upload and store images using Firebase Storage.
 
+
+##  Screenshot
+<img src="https://github.com/user-attachments/assets/0a987264-68e8-45fc-891d-bce6bd7b7c32" alt="Screenshot 1" width="300"/>
+<img src="https://github.com/user-attachments/assets/88510dd4-47e5-4444-bb5a-5b5995a63550" alt="Screenshot 2" width="300"/>
+<img src="https://github.com/user-attachments/assets/436b4640-b663-4dd1-94f8-ecb116f04347" alt="Screenshot 3" width="300"/>
+
+
+
 ## Dependencies
 The app utilizes the following dependencies:
 - `androidx.appcompat:appcompat:1.6.1`
