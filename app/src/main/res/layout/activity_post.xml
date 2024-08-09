@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Post.PostActivity">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/post_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -45,61 +45,64 @@
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
                 android:padding="5dp"
                 android:src="@drawable/ic_check_right"
-                android:layout_marginEnd="10dp"
                 app:tint="@color/sky_blue" />
 
         </LinearLayout>
 
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
+        android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linear1"
         android:layout_below="@+id/post_toolbar"
         android:orientation="horizontal"
-        android:weightSum="100"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:weightSum="100">
 
         <ImageView
+            android:id="@+id/added_image"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:id="@+id/added_image"
-            android:layout_weight="25"/>
+            android:layout_weight="25" />
+
         <EditText
+            android:id="@+id/added_caption"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/added_caption"
-            android:layout_weight="75"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="75"
+            android:background="@drawable/edittext_background"
             android:hint="Write a caption..."
-            android:textColor="@color/black"
-            android:layout_marginStart="10dp"/>
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </LinearLayout>
+
     <TableRow
+        android:id="@+id/hr"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:id="@+id/hr"
-        android:background="@color/lightgray"
+        android:layout_below="@id/linear1"
         android:layout_marginTop="4dp"
-        android:layout_below="@id/linear1"/>
+        android:background="@color/lightgray" />
+
     <EditText
+        android:id="@+id/added_tags"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/added_tags"
-        android:hint="Tags"
-        android:textColorHint="@color/black"
-        android:textColor="@color/black"
         android:layout_below="@+id/hr"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginTop="15dp"/>
-
-
-
-
+        android:background="@drawable/edittext_background"
+        android:hint="Tags"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
 
 </RelativeLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Profile.EditProfile">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/edit_profile_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -52,7 +52,7 @@
 
         </LinearLayout>
 
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"

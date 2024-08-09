@@ -5,15 +5,14 @@
     android:id="@+id/relative_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration"
-    android:background="@color/white">
-
+    android:background="@color/white"
+    tools:context=".Registration">
 
 
     <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView1"
         android:layout_above="@+id/sr">
 
         <LinearLayout
@@ -23,153 +22,155 @@
 
             <!--*******create account**********-->
             <TextView
+                android:id="@+id/txtcreate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtcreate"
-                android:text="Create Account"
-                android:textStyle="italic"
-                android:textSize="40sp"
-                android:textColor="#333333"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="50dp"/>
+                android:text="Create Account"
+                android:textColor="#333333"
+                android:textSize="40sp"
+                android:textStyle="italic" />
 
             <!--*******Full Name**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Fullname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Fullname"
+                android:layout_below="@id/txtcreate"
                 android:layout_marginTop="15dp"
-                android:textColorHint="@color/white"
-                android:paddingEnd="15dp"
                 android:paddingStart="15dp"
+                android:paddingEnd="15dp"
 
-                android:layout_below="@id/txtcreate">
+                android:textColorHint="@color/white">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="FullName"
-                    android:textColor="@color/white"
                     android:background="@drawable/edittext_background"
-                    android:inputType="text"/>
+                    android:hint="FullName"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******Username**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Username"
+                android:layout_below="@id/Fullname"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                android:textColorHint="@color/white"
-                android:layout_below="@id/Fullname">
+                android:paddingEnd="15dp"
+                android:textColorHint="@color/white">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username"
                     android:background="@drawable/edittext_background"
-                    android:textColor="@color/white"
-                    android:inputType="text"/>
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******Email**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/signup_email"
+                android:layout_below="@id/Username"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                android:textColorHint="@color/white"
-                android:layout_below="@id/Username">
+                android:paddingEnd="15dp"
+                android:textColorHint="@color/white">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
                     android:background="@drawable/edittext_background"
-                    android:textColor="@color/white"
-                    android:inputType="textEmailAddress"/>
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******mobile number**********-->
             <LinearLayout
+                android:id="@+id/linear1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/linear1"
-                android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
-                android:orientation="horizontal"
                 android:layout_below="@id/signup_email"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
                 android:weightSum="100">
 
                 <com.hbb20.CountryCodePicker
                     android:id="@+id/countrycode"
                     android:layout_width="wrap_content"
 
-                    android:layout_height="40dp">
-                </com.hbb20.CountryCodePicker>
+                    android:layout_height="40dp"></com.hbb20.CountryCodePicker>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/mobilenoo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/white"
-                    android:layout_weight="80">
+                    android:layout_weight="80"
+                    android:textColorHint="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="MobileNumber"
                         android:background="@drawable/edittext_background"
+                        android:hint="MobileNumber"
                         android:inputType="number"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
             <!--*******password**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/signup_password"
+                android:layout_below="@id/linear1"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                app:passwordToggleEnabled="true"
+                android:paddingEnd="15dp"
                 android:textColorHint="@color/white"
-                android:layout_below="@id/linear1">
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
                     android:background="@drawable/edittext_background"
-                    android:textColor="@color/white"
-                    android:inputType="textPassword"/>
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******gender**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/gender"
+                android:layout_below="@id/signup_password"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
 
                 android:paddingStart="15dp"
 
-                android:textColorHint="@color/white"
-                android:layout_below="@id/signup_password">
+                android:paddingEnd="15dp"
+                android:textColorHint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Male/Female/None"
                     android:background="@drawable/edittext_background"
-                    android:textColor="@color/white"
-                    android:inputType="text"/>
+                    android:hint="Male/Female/None"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******birt date text**********-->
@@ -177,100 +178,102 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
-                android:paddingStart="15dp"
                 android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
                 android:weightSum="100">
 
                 <TextView
+                    android:id="@+id/txtbirth"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txtbirth"
-                    android:text="Birth date"
-                    android:textSize="16sp"
-                    android:textColor="@color/white"
                     android:layout_below="@id/gender"
-                    android:layout_weight="40"/>
+                    android:layout_weight="40"
+                    android:text="Birth date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/birthdate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/birthdate"
                     android:layout_weight="60"
+                    android:background="@drawable/edittext_background"
                     android:drawableLeft="@drawable/ic_birth"
                     android:drawablePadding="10dp"
-                    android:background="@drawable/edittext_background"
+                    android:hint="Select Date"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:hint="Select Date"/>
+                    android:textColorHint="@color/white" />
 
             </LinearLayout>
 
 
             <!--*******birth date picker**********-->
-<!--            <DatePicker-->
-<!--                android:id="@+id/birthdate"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:calendarViewShown="false"-->
-<!--                android:datePickerMode="spinner"-->
-<!--                android:spinnersShown="true"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginEnd="15dp"-->
-<!--                android:layout_below="@id/txtbirth"/>-->
+            <!--            <DatePicker-->
+            <!--                android:id="@+id/birthdate"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:calendarViewShown="false"-->
+            <!--                android:datePickerMode="spinner"-->
+            <!--                android:spinnersShown="true"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginEnd="15dp"-->
+            <!--                android:layout_below="@id/txtbirth"/>-->
 
             <!--*******bio**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/bio"
+                android:layout_below="@id/signup_password"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                android:textColorHint="@color/white"
-                android:layout_below="@id/signup_password">
+                android:paddingEnd="15dp"
+                android:textColorHint="@color/white">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Bio(Optional)"
                     android:background="@drawable/edittext_background"
-                    android:textColor="@color/white"
-                    android:inputType="text"/>
+                    android:hint="Bio(Optional)"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******website**********-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/website"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/website"
+                android:layout_below="@id/bio"
                 android:layout_marginTop="12dp"
-                android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                android:textColorHint="@color/white"
-                android:layout_below="@id/bio">
+                android:paddingEnd="15dp"
+                android:textColorHint="@color/white">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Website(Optional)"
                     android:background="@drawable/edittext_background"
-                    android:textColor="@color/white"
-                    android:inputType="text"/>
+                    android:hint="Website(Optional)"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--*******log in**********-->
             <Button
+                android:id="@+id/signup_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/signup_button"
+                android:layout_below="@+id/website"
                 android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
                 android:background="@drawable/blue_button"
                 android:text="Sign Up"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_below="@+id/website"/>
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -282,23 +285,21 @@
         android:id="@+id/sr"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_above="@+id/AlreadyHavesignin"
         android:layout_marginTop="12dp"
-        android:background="@color/textcolor"
-        android:layout_above="@+id/AlreadyHavesignin"/>
+        android:background="@color/textcolor" />
 
     <!--*******have account**********-->
     <TextView
+        android:id="@+id/AlreadyHavesignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/AlreadyHavesignin"
-        android:text="Already have an account? Sign In."
-        android:textSize="16sp"
-        android:textColor="@color/dark_purple"
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
-        android:padding="15dp"/>
-
-
+        android:padding="15dp"
+        android:text="Already have an account? Sign In."
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp" />
 
 
 </RelativeLayout>

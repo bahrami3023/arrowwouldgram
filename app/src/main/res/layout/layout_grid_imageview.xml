@@ -5,12 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <my.insta.androrealm.Utils.SquareImageView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        android:id="@+id/gridImageView"-->
-<!--        tools:ignore="MissingClass" />-->
 
     <com.arrowwould.arrowwouldgram.Utils.SquareImageView
         android:layout_width="match_parent"

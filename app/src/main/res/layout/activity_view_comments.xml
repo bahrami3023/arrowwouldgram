@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Profile.ViewComments">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/comment_View_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -42,28 +42,28 @@
 
         </LinearLayout>
 
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listView"
-        android:layout_below="@+id/comment_View_toolbar"
-        android:layout_above="@+id/sr"/>
+        android:layout_above="@+id/sr"
+        android:layout_below="@+id/comment_View_toolbar" />
 
     <TableRow
         android:id="@+id/sr"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
+        android:layout_above="@+id/doComment"
         android:layout_marginTop="2dp"
-        android:background="@color/textcolor"
-        android:layout_above="@+id/doComment"/>
+        android:background="@color/textcolor" />
 
 
     <LinearLayout
+        android:id="@+id/doComment"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/doComment"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:padding="3dp"
@@ -73,33 +73,34 @@
             android:id="@+id/user_img"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            app:civ_border_width="0.5dp"
-            app:civ_border_color="@color/darkgray"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"
-            android:layout_weight="10"/>
+            android:layout_weight="10"
+            app:civ_border_color="@color/darkgray"
+            app:civ_border_width="0.5dp" />
 
         <EditText
+            android:id="@+id/comment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/comment"
-            android:hint="Add a comment..."
-            android:background="@null"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:textSize="14sp"
-            android:layout_weight="80"/>
+            android:layout_weight="80"
+            android:background="@null"
+            android:hint="Add a comment..."
+            android:textSize="14sp" />
+
         <TextView
+            android:id="@+id/post_comment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/post_comment"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
             android:layout_weight="10"
             android:text="Post"
-            android:textSize="16sp"
             android:textColor="@color/blue_link"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="5dp"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
 
