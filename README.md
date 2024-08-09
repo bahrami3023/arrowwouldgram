@@ -33,6 +33,7 @@ This Instagram Clone App is developed for educational purposes only. It is inten
 
 <img src="https://github.com/user-attachments/assets/40517364-038e-4d58-9276-c6ba4bd231db" alt="Screenshot 8" width="300"/>
 
+<img src="https://github.com/user-attachments/assets/16c24e9b-cb95-468e-9993-737b0a567735" alt="Screenshot 9" width="300"/>
 
 
 
