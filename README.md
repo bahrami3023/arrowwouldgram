@@ -16,10 +16,23 @@ This Instagram Clone App is developed for educational purposes only. It is inten
 - **Image Uploading and Storage**: Upload and store images using Firebase Storage.
 
 
+
+
+
 ##  Screenshot
-<img src="https://github.com/user-attachments/assets/0a987264-68e8-45fc-891d-bce6bd7b7c32" alt="Screenshot 1" width="300"/>
-<img src="https://github.com/user-attachments/assets/88510dd4-47e5-4444-bb5a-5b5995a63550" alt="Screenshot 2" width="300"/>
-<img src="https://github.com/user-attachments/assets/436b4640-b663-4dd1-94f8-ecb116f04347" alt="Screenshot 3" width="300"/>
+<img src="https://github.com/user-attachments/assets/49f6f56f-c6be-49b7-b70f-8d2e3ec19f4d" alt="Screenshot 1" width="300"/>
+<img src="https://github.com/user-attachments/assets/31142226-1359-4647-80c3-14f6ddf6fbdf" alt="Screenshot 2" width="300"/>
+<img src="https://github.com/user-attachments/assets/dda124c3-187b-4d26-a4a3-5ac73af415c4" alt="Screenshot 3" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/a1645aaa-d6a1-40ca-8d32-b6341ae328f1" alt="Screenshot 4" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/da9261b7-6d30-4064-93b1-3e671fc21154" alt="Screenshot 5" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/a99d074d-3cd5-4d52-beab-22d0464f08d2" alt="Screenshot 6" width="300"/>
+<img src="https://github.com/user-attachments/assets/ad39a303-1d7c-4e18-9bf7-8b7e34b7d138" alt="Screenshot 7" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/40517364-038e-4d58-9276-c6ba4bd231db" alt="Screenshot 8" width="300"/>
+
 
 
 
