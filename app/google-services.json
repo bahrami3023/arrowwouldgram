@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "257052799485",
+    "project_id": "instagraclonee",
+    "storage_bucket": "instagraclonee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257052799485:android:4a3c6a5071c9243c056994",
+        "android_client_info": {
+          "package_name": "com.arrowwould.arrowwouldgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257052799485-fs2in5ui97ga3a0h1ia9stosvfksv45n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arrowwould.arrowwouldgram",
+            "certificate_hash": "02893e61f02cec32bbeacf05fa9a4b78443e2e00"
+          }
+        },
+        {
+          "client_id": "257052799485-r629r82d61n3oljh10mpt0d4to30u4sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAySYZf6mWI4qJl5VkyiFStoxR26DkZMgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257052799485-r629r82d61n3oljh10mpt0d4to30u4sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
